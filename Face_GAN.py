@@ -34,7 +34,7 @@ from tqdm import tqdm
 import os
 
 # Custom functions
-import gan_functions
+import utils.gan_functions as gan_functions
 
 # =============================================================================
 # Paths and Variables
@@ -62,7 +62,7 @@ use_pretrained_model = False
 pretrained_model_path_generator = "saved_models/face_generator.h5"
 pretrained_model_path_discriminator = "saved_models/face_discriminator.h5"
 
-epochs = 5000
+epochs = 5 #000
 batch_size = 32
 
 start_epoch = 0

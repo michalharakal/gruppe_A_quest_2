@@ -77,7 +77,10 @@ def get_training_data(datafolder, image_width, image_height, channels):
 
     training_data = []
     #Finds all files in datafolder
-    filenames = os.listdir(datafolder)
+    #filenames = os.listdir(datafolder)
+    filenames = [f for f in os.listdir(datafolder) if f.endswith('.jpg')]
+   
+    
     for filename in tqdm(filenames):
         #Combines folder name and file name.
         path = os.path.join(datafolder,filename)
