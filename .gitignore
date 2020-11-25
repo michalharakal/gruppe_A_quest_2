@@ -21,6 +21,8 @@ __pycache__/
 # exclude all .jpg file the generated faces
 generated_faces/*
 
+# exclude - do not save model in git
+*.h5
 
 # Distribution / packaging
 .Python
