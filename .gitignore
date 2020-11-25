@@ -18,8 +18,8 @@ __pycache__/
 # C extensions
 *.so
 
-# model extensions
-.h5
+# exclude all .jpg file the generated faces
+generated_faces/*
 
 
 # Distribution / packaging
