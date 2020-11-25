@@ -36,6 +36,16 @@ import os
 # Custom functions
 import utils.gan_functions as gan_functions
 
+
+# =============================================================================
+# to work with local gpu 
+# =============================================================================
+import tensorflow as tf
+gpu_devices = tf.config.experimental.list_physical_devices('GPU')
+for device in gpu_devices:
+    tf.config.experimental.set_memory_growth(device, True)
+
+
 # =============================================================================
 # Paths and Variables
 # =============================================================================
@@ -59,10 +69,10 @@ target_fn = "/generated"
 
 use_pretrained_model = False
 
-pretrained_model_path_generator = "saved_models/face_generator.h5"
-pretrained_model_path_discriminator = "saved_models/face_discriminator.h5"
+pretrained_model_path_generator = "Models/face_generator.h5"
+pretrained_model_path_discriminator = "Models/face_discriminator.h5"
 
-epochs = 5 #000
+epochs = 101 #000
 batch_size = 32
 
 start_epoch = 0
