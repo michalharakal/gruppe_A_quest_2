@@ -3,7 +3,7 @@
 Members: Sven, Andreas, Petra, Michal
 
 ### Tasks
-- [X] Setup folder structure @ANeu25, @Petra865, @michalharakal, @Petra865,  @swontroba
+- [X] Setup folder structure @ANeu25, @Petra865, @michalharakal, @swontroba
 - [X] Put the Live Coding script into the Repo @ANeu25, @Petra865
 - [X] and also the gan_functions module (should go into utils) @Petra865
 - [ ] Add another convolutional block to the generator.  @Petra865
