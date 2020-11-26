@@ -20,11 +20,15 @@ from PIL import Image
 import matplotlib.pyplot as plt
 
 # Model functions from keras
-from keras.layers import Input, Reshape, Dropout, Dense, Flatten, \
-                         BatchNormalization, Activation, ZeroPadding2D
-from keras.layers.advanced_activations import LeakyReLU
-from keras.layers.convolutional import UpSampling2D, Conv2D
-from keras.models import Sequential, Model
+import tensorflow as tf
+from tensorflow.keras.layers import Input, Reshape, Dropout, Dense, Flatten, \
+                                    BatchNormalization, Activation, ZeroPadding2D
+#from keras.layers.advanced_activations import LeakyReLU (Version: Wolfgang)
+from tensorflow.keras.layers import LeakyReLU
+
+#from keras.layers.convolutional import UpSampling2D, Conv2D   (Version: Wolfgang)
+from tensorflow.keras.layers import UpSampling2D, Conv2D
+from tensorflow.keras.models import Sequential, Model
 
 # =============================================================================
 # Functions

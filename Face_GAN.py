@@ -14,12 +14,17 @@ Inspired and altered from:
 # =============================================================================
 
 # Model functions from keras
-from keras.layers import Input, Reshape, Dropout, Dense, Flatten, \
+import tensorflow as tf
+from tensorflow.keras.layers import Input, Reshape, Dropout, Dense, Flatten, \
                          BatchNormalization, Activation, ZeroPadding2D
-from keras.layers.advanced_activations import LeakyReLU
-from keras.layers.convolutional import UpSampling2D, Conv2D
-from keras.models import Sequential, Model, load_model
-from keras.optimizers import Adam
+
+#from keras.layers.advanced_activations import LeakyReLU
+from tensorflow.keras.layers import LeakyReLU
+
+#from keras.layers.convolutional import UpSampling2D, Conv2D
+from tensorflow.keras.layers import UpSampling2D, Conv2D
+from tensorflow.keras.models import Sequential, Model, load_model
+from tensorflow.keras.optimizers import Adam
 
 # matplotlib will help with displaying the results
 import matplotlib.pyplot as plt
