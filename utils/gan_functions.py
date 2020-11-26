@@ -83,7 +83,14 @@ def get_training_data(datafolder, image_width, image_height, channels):
     #Finds all files in datafolder
     #filenames = os.listdir(datafolder)
     filenames = [f for f in os.listdir(datafolder) if f.endswith('.jpg')]
-   
+    if filenames == []:
+        print('!!! No Data in Data dir !!!')
+        print('!!! Go and get your images copy them into the data dir!!!')
+        print('exit')
+        import sys
+        sys.exit()
+    else:
+        print('loading images...')
     
     for filename in tqdm(filenames):
         #Combines folder name and file name.
