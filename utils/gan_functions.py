@@ -129,6 +129,13 @@ def build_generator(random_noise_dimension, channels):
     #    this video: https://www.youtube.com/watch?v=FTr3n7uBIuE
     # 3. Normalization normalizes outputs from convolution.
     # 4. Relu activation:  f(x) = max(0,x). If x < 0, then f(x) = 0.
+    
+    #example2  Add another conv block - after removing the 1st upsampling Layer
+    #copy of next block after deleting upsampling layer
+    #may adjust 256 
+    #model.add(Conv2D(256,kernel_size=3,padding="same"))
+    #model.add(BatchNormalization(momentum=0.8))
+    #model.add(Activation("relu"))
 
 
     model.add(UpSampling2D())
