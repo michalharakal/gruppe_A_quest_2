@@ -11,3 +11,11 @@ Members: Sven, Andreas, Petra, Michal
 - [X] Get rid of all Dropout layers @michalharakal
 - [X] Get rid of the BatchNorm layers in the Discriminator @swontroba
 - [X] Leave out the tanh layer in the generator @michalharakal
+
+### Presentation on github pages
+
+activate gh_pages in settings
+
+   pandoc -t slidy presentation/index.md -o slides/index.html --self-contained
+
+
