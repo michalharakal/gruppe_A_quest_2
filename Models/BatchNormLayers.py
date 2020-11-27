@@ -1,10 +1,14 @@
+from tensorflow.keras.layers import Input, Dropout, Dense, Flatten, ZeroPadding2D
+from tensorflow.keras.layers import Conv2D
+from tensorflow.keras.layers import LeakyReLU
+from tensorflow.keras.models import Sequential, Model
+
 
 def build_discriminator_no_batch(image_shape):
     # Discriminator attempts to classify real and generated images
     model = Sequential()
 
-    model.add(Conv2D(32, kernel_size=3, strides=2, \
-                     input_shape=image_shape, padding="same"))
+    model.add(Conv2D(32, kernel_size=3, strides=2, input_shape=image_shape, padding="same"))
     # Leaky relu is similar to usual relu. If x < 0 then f(x) = x * alpha,
     # otherwise f(x) = x.
     model.add(LeakyReLU(alpha=0.2))
