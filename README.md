@@ -10,4 +10,4 @@ Members: Sven, Andreas, Petra, Michal
 - [ ] Add another conv block - after removing the 1st upsampling Layer @ANeu25
 - [X] Get rid of all Dropout layers @michalharakal
 - [X] Get rid of the BatchNorm layers in the Discriminator @swontroba
-- [ ] Leave out the tanh layer in the generator @michalharakal
+- [X] Leave out the tanh layer in the generator @michalharakal
